@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 4</title>
+</head>
+<body>
+    <script>
+        let hight = prompt('Enter a number from 2 to 8');
+        let tree = '';
+        if (2 <= hight && hight <= 8) {
+            for (let i = 1; i <= hight; i++) {
+                for (let space = hight - i; space--;) {
+                    tree += ' ';  
+                }
+                for (let star = 1; star <= 2 * i - 1; star++) {
+                    tree += '*';
+                }
+                tree += '\n';
+            }
+            alert(tree);
+        } else {
+            alert('Please, enter a correct number')
+        }
+    </script>
+</body>
+</html>
